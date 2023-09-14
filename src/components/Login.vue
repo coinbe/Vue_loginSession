@@ -57,7 +57,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+	data() {
+		return {
+			userId: null,
+			userPassword: null,
+		};
+	},
+	methods: {
+		loginSubmit() {
+			let saveData = {};
+			saveData.userId = this.userId;
+			saveData.userPassword = this.userPassword;
+		},
+	},
+};
 </script>
 
 <style></style>
